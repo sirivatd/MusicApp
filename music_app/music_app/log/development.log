@@ -1,0 +1,129 @@
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4505726345591715405)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180913181500)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180913181500"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-13 18:15:57.748466"], ["updated_at", "2018-09-13 18:15:57.748466"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4505726345591715405)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-09-13 11:27:13 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/donsirivat/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/donsirivat/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-13 11:29:45 -0700
+Processing by Rails::WelcomeController#index as HTML
+Started GET "/users" for 127.0.0.1 at 2018-09-13 11:29:55 -0700
+  Rendering /Users/donsirivat/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/donsirivat/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+  validates: :password_digest, presence: {message: 'cant be blank'}
+            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:4: syntax error, unexpected ':', expecting keyword_end
+  validates: :session_token, presence: true, uniqueness: true
+            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:4: Can't assign to true
+  validates: :session_token, presence: true, uniqueness: true
+                                            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:5: syntax error, unexpected ':', expecting keyword_end
+  validates: :password, length: {minimum: 6, allow_nil: true }
+            ^:
+  app/models/user.rb:3:in `'
+  app/controllers/users_controller.rb:3:in `index'
+
+Started POST "/__better_errors/27299f2f153146f6/variables" for 127.0.0.1 at 2018-09-13 11:29:56 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 11:30:24 -0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+  validates: :password_digest, presence: {message: 'cant be blank'}
+            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:4: syntax error, unexpected ':', expecting keyword_end
+  validates: :session_token, presence: true, uniqueness: true
+            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:4: Can't assign to true
+  validates: :session_token, presence: true, uniqueness: true
+                                            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:5: syntax error, unexpected ':', expecting keyword_end
+  validates: :password, length: {minimum: 6, allow_nil: true }
+            ^:
+  app/models/user.rb:3:in `'
+  app/controllers/users_controller.rb:3:in `index'
+
+Started POST "/__better_errors/cb18065ce7acb11a/variables" for 127.0.0.1 at 2018-09-13 11:30:24 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 11:31:34 -0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+  validates: :password_digest, presence: ...
+            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:3: syntax error, unexpected '}', expecting keyword_end
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:4: Can't assign to true
+  validates: :session_token, presence: true, uniqueness: true
+                                            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:5: syntax error, unexpected ':', expecting keyword_end
+  validates: :password, length: {minimum: 6, allow_nil: true }
+            ^:
+  app/models/user.rb:3:in `'
+  app/controllers/users_controller.rb:3:in `index'
+
+Started POST "/__better_errors/de46148731390979/variables" for 127.0.0.1 at 2018-09-13 11:31:34 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 11:31:42 -0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+  validates: :password_digest, presence: true 
+            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:4: syntax error, unexpected ':', expecting keyword_end
+  validates: :session_token, presence: true, uniqueness: true
+            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:4: Can't assign to true
+  validates: :session_token, presence: true, uniqueness: true
+                                            ^
+/Users/donsirivat/Desktop/W4D4/music_app/music_app/app/models/user.rb:5: syntax error, unexpected ':', expecting keyword_end
+  validates: :password, length: {minimum: 6, allow_nil: true }
+            ^:
+  app/models/user.rb:3:in `'
+  app/controllers/users_controller.rb:3:in `index'
+
+Started POST "/__better_errors/a4312c6cf6057eb9/variables" for 127.0.0.1 at 2018-09-13 11:31:42 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 11:32:14 -0700
+Processing by UsersController#index as HTML
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-09-13 11:32:27 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 2.7ms)
+
+
