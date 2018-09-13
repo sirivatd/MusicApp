@@ -1,0 +1,7 @@
+<h1>MusicApp</h1>
+
+<% if logged_in? %>
+<h3>Welcome, <%= current_user.email %> </h3>
+<% else %>
+<h4>Your're not logged in</h4>
+<% end %>

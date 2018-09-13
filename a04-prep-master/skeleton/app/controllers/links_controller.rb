@@ -14,13 +14,13 @@ class LinksController < ApplicationController
     if @link.update_attributes(link_params)
       redirect_to link_url(@link)
     else
-      flash.now[:errors] = @link.error.full_messages
-      redirect_to link_url(@link)
+      flash.now[:errors] = @link.errors.full_messages
+      redirect_to :edit
     end
   end
 
   def edit
-    
+    @link = Link.find(params[:id])
   end
 
   def new
@@ -33,8 +33,8 @@ class LinksController < ApplicationController
     if @link.save
       redirect_to link_url(@link)
     else
-      flash.now[:errors] = @link.error.full_messages
-      redirect_to links_url
+      flash.now[:errors] = @link.errors.full_messages
+      render :new
 
     end
   end
@@ -46,6 +46,6 @@ class LinksController < ApplicationController
   private
 
   def link_params
-    require.(:link).permit(:title, :url, :)
+    params.require(:link).permit(:title, :url)
   end
 end

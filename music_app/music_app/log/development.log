@@ -127,3 +127,467 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-13 13:36:29 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/donsirivat/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/donsirivat/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-09-13 13:36:33 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 717ms (Views: 716.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:37:50 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:38:34 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:41:29 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:43:41 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:44:04 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:44:24 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:44:47 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:44:57 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{":email"=>"don@sitivat.com", ":password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/32dcea738bf60713/variables" for 127.0.0.1 at 2018-09-13 13:44:58 -0700
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:48:10 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{":email"=>"don@sitivat.com", ":password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/28dd860e505c1a43/variables" for 127.0.0.1 at 2018-09-13 13:48:10 -0700
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:49:26 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{":email"=>"don@sitivat.com", ":password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/f3f849616e722755/variables" for 127.0.0.1 at 2018-09-13 13:49:26 -0700
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:49:47 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 198ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:49:52 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"JwdCQobYU9jSyClEGe4Gk3besew/CnQy0QpU4yl9dJtJIZrwtLvciw17ww6zPD7k28dzn0RELyYYkDdYf3VmAg==", "user"=>{":email"=>"don", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "M8vd7XUZgYfEqSru9cS_RA"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 46ms (ActiveRecord: 18.2ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email can't be blank, Password digest cant be blank:
+  app/controllers/users_controller.rb:8:in `create'
+
+Started POST "/__better_errors/44c51718ace632d3/variables" for 127.0.0.1 at 2018-09-13 13:49:53 -0700
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:52:15 -0700
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:52:25 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"JwdCQobYU9jSyClEGe4Gk3besew/CnQy0QpU4yl9dJtJIZrwtLvciw17ww6zPD7k28dzn0RELyYYkDdYf3VmAg==", "user"=>{":email"=>"don", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5w4Avf2YVo8QpUE8TbTkvA"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 81ms (ActiveRecord: 7.8ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email can't be blank:
+  app/controllers/users_controller.rb:10:in `create'
+
+Started POST "/__better_errors/e489ba5a05823ba0/variables" for 127.0.0.1 at 2018-09-13 13:52:26 -0700
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:52:40 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:52:42 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:52:48 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"XYHx1nJVYGOxvGyWcv9EGoMD1V73YoeNrTjRB0FX23czpylkQDbvMG4PhtzYLXxtLhoXLYws3JlkorK8F1/J7g==", "user"=>{":email"=>"don@sitivat.com", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "RriO-aQH9PpSfqf7R03rvQ"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 65ms (ActiveRecord: 1.0ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email can't be blank:
+  app/controllers/users_controller.rb:10:in `create'
+
+Started POST "/__better_errors/864401aca33ebbbe/variables" for 127.0.0.1 at 2018-09-13 13:52:48 -0700
+Started GET "/users/new" for 127.0.0.1 at 2018-09-13 13:53:48 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:53:53 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"pfx40LrahMRvqVd9gCsz/X88663ku3ag89/7NfgFH/HL2qBiiLkLl7AavTcq+QuK0iUp3p/1LbQ6RZiOrg0NaA==", "user"=>{":email"=>"don@sitivat.com", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "don@sirivat.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Bt5e1YYrj_dLr6je2JX6rA"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "don@sirivat.com"], ["password_digest", "$2a$10$Sr1Pxio4o0zqgqvuIbSyKO9VGn9SSOMkN2ELiAsB/n41krhFdhqGG"], ["session_token", "Bt5e1YYrj_dLr6je2JX6rA"], ["created_at", "2018-09-13 20:53:53.939374"], ["updated_at", "2018-09-13 20:53:53.939374"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 88ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-09-13 13:53:53 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users" for 127.0.0.1 at 2018-09-13 13:56:04 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:56:11 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"IsB4Zm/RCJNotOn/ncG8v0UWXIE0OlX+eP3B/0UK8SFM5qDUXbKHwLcHA7U3E4TI6A+e8k90DuqxZ6JEEwLjuA==", "user"=>{":email"=>"tobias", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "L_19gxhJpiBaKHfgmh5DkA"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 18ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email can't be blank, Password digest cant be blank:
+  app/controllers/users_controller.rb:9:in `create'
+
+Started POST "/__better_errors/baec7a515d35221b/variables" for 127.0.0.1 at 2018-09-13 13:56:12 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 13:57:10 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:57:15 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"lYXHSEUUGpK5qZw/WX876sewvCX8W6S4kiNwmcOcke/7ox/6d3eVwWYadnXzrQOdaql+VocV/6xbuRMilZSDdg==", "user"=>{":email"=>"tobias", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "jDy0i9sI3e1N7haaMl4F6g"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 18ms (ActiveRecord: 1.2ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email can't be blank, Password digest cant be blank:
+  app/controllers/users_controller.rb:9:in `create'
+
+Started POST "/__better_errors/7a24a745825f9ba0/variables" for 127.0.0.1 at 2018-09-13 13:57:16 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 13:58:21 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 13:58:27 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"dFKbv0fvcx+nGnyLJOCr9SLzu5uJH1cLshgv3ZMiHu8adEMNdYz8THiplsGOMpOCj+p56PJRDB97gkxmxSoMdg==", "user"=>{":email"=>"tobias", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ZIHmXludXofc7zBojKK55A"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 17ms (ActiveRecord: 1.6ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email can't be blank, Password digest cant be blank:
+  app/controllers/users_controller.rb:9:in `create'
+
+Started POST "/__better_errors/7a8e29c307b73c52/variables" for 127.0.0.1 at 2018-09-13 13:58:27 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:00:43 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:00:48 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"k1t3fGm6JzRVZkecnkmMuoT7/fdiC8jfgJF//BZ/7Mb9fa/OW9moZ4rVrdY0m7TNKeI/hBlFk8tJCxxHQHf+Xw==", "user"=>{":email"=>"asd", ":password"=>"[FILTERED]"}}
+Unpermitted parameters: ::email, ::password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "PTbdoJJ6f1eVOSM3GveXaw"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 18ms (ActiveRecord: 1.3ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email can't be blank, Password digest cant be blank:
+  app/controllers/users_controller.rb:9:in `create'
+
+Started POST "/__better_errors/a2dc62ae4897aded/variables" for 127.0.0.1 at 2018-09-13 14:00:48 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:01:24 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:01:30 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"yruuE+h90j8pOAmlZ0b6jqpCrAkL/NUL/EJroY7jMxCknXah2h5dbPaL4+/NlML5B1tuenCyjh812Aga2OshiQ==", "user"=>{"email"=>"tobias", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tobias"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "53P_RN-PMU3upC_lNXyQYw"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "tobias"], ["password_digest", "$2a$10$iFJdetZKWgLJxlNpKhbvr.egqJt41fx8OUWxSI9hEUgPoc5YceR9S"], ["session_token", "53P_RN-PMU3upC_lNXyQYw"], ["created_at", "2018-09-13 21:01:30.944884"], ["updated_at", "2018-09-13 21:01:30.944884"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 65ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:01:30 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:09:03 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"U5Dh90owXeuREQYkQH44wWtrHLcxvYWz7kIkzyNcUu49tjlFeFPSuE6i7G7qrAC2xnLexErz3qcn2Ed0dVRAdw==", "user"=>{"email"=>"tobias", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tobias"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mkj4FWrY6t91wB7tW3oJrA"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 75ms (ActiveRecord: 5.4ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email has already been taken:
+  app/controllers/users_controller.rb:9:in `create'
+
+Started POST "/__better_errors/1af2e3703e0d05f2/variables" for 127.0.0.1 at 2018-09-13 14:09:03 -0700
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:27:56 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"U5Dh90owXeuREQYkQH44wWtrHLcxvYWz7kIkzyNcUu49tjlFeFPSuE6i7G7qrAC2xnLexErz3qcn2Ed0dVRAdw==", "user"=>{"email"=>"harry", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harry"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "9BxmJdzDZrVvtzGcjiHM9A"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "harry"], ["password_digest", "$2a$10$0Cg3f15Oh7h3jDuFdBI4YuQ9DXrcnH7l5NsRkivV.dD3gzkXOZp82"], ["session_token", "9BxmJdzDZrVvtzGcjiHM9A"], ["created_at", "2018-09-13 21:27:56.870439"], ["updated_at", "2018-09-13 21:27:56.870439"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 65ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:27:56 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:35:19 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:35:26 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"dK02UsL/7BCY9wCfNsDQhqsahArN0AEoLw9FLbsdcIwai+7g8JxjQ0dE6tWcEujxBgNGebaeWjzmlSaW7RViFQ==", "user"=>{"email"=>"katie", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "katie"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "fDaIMRRp9_31EyrNl-905g"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "katie"], ["password_digest", "$2a$10$8PTscTqEe6mk.emeIUuZ3O9O8Yo11t2IeNRyG3JvOSdhigwsdEn12"], ["session_token", "fDaIMRRp9_31EyrNl-905g"], ["created_at", "2018-09-13 21:35:27.076177"], ["updated_at", "2018-09-13 21:35:27.076177"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 6.9ms)
+
+
+
+NoMethodError - undefined method `login_user' for #<UsersController:0x007fcb5fdd1d28>
+Did you mean?  login_user!:
+  app/controllers/users_controller.rb:10:in `create'
+
+Started POST "/__better_errors/b358fc24d805d763/variables" for 127.0.0.1 at 2018-09-13 14:35:27 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:35:51 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:35:55 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"phjBzkHveu2L7x+QGyC4+3WHpbsY4EaQ8PJ9KJUsllrIPhl8c4z1vlRc9dqx8oCM2J5nyGOuHYQ5aB6TwySEww==", "user"=>{"email"=>"katie", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "katie"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "gWJR6EWWMW9HFWseWt40UA"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 75ms (ActiveRecord: 1.2ms)
+
+
+
+ActiveRecord::RecordInvalid - Validation failed: Email has already been taken:
+  app/controllers/users_controller.rb:9:in `create'
+
+Started POST "/__better_errors/5ce0fc35f5a688b1/variables" for 127.0.0.1 at 2018-09-13 14:35:56 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:35:59 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:36:04 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"gTTm+MzE5QtM2gqPbKd6bNCrWzJpcMZ3JJF4GUJsYJTvEj5K/qdqWJNp4MXGdUIbfbKZQRI+nWPtCxuiFGRyDQ==", "user"=>{"email"=>"niko", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "niko"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "TQ3RQGwv2U_g-CXqJMmlRw"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "niko"], ["password_digest", "$2a$10$EYuRRkYcxxTuKbbI3BW7u.wjviG0GY4FPzocU6IAt672gyU8gtCCK"], ["session_token", "TQ3RQGwv2U_g-CXqJMmlRw"], ["created_at", "2018-09-13 21:36:04.483452"], ["updated_at", "2018-09-13 21:36:04.483452"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 2.6ms)
+
+
+
+NoMethodError - undefined method `sesion_token=' for #<User:0x007fcb5f7ad6e0>
+Did you mean?  session_token=
+               session_token
+               session_token?:
+  app/models/user.rb:25:in `reset_session_token!'
+  app/controllers/application_controller.rb:18:in `login_user!'
+  app/controllers/users_controller.rb:10:in `create'
+
+Started POST "/__better_errors/f05744d7d2abe255/variables" for 127.0.0.1 at 2018-09-13 14:36:04 -0700
+Started GET "/users" for 127.0.0.1 at 2018-09-13 14:36:17 -0700
+Processing by UsersController#index as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-09-13 14:36:23 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"v/FHyBoeP1c9P+s1TmJUjS96kyznEb1frWBG20Uf7zPR1596KH2wBOKMAX/ksGz6gmNRX5xf5ktk+iVgExf9qg==", "user"=>{"email"=>"kristen", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kristen"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "oAM4sLwzeeXQp9T2PWvQgw"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "kristen"], ["password_digest", "$2a$10$FUDUQOB.vweq0GcXWLGYRO4dz4Htt9hnpECuYy63iwuoJATrMKlaO"], ["session_token", "oAM4sLwzeeXQp9T2PWvQgw"], ["created_at", "2018-09-13 21:36:24.077924"], ["updated_at", "2018-09-13 21:36:24.077924"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "kristen"], ["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["session_token", "zyYEGMTQwjcphECltCTdNA"], ["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "zyYEGMTQwjcphECltCTdNA"], ["updated_at", "2018-09-13 21:36:24.083908"], ["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 86ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2018-09-13 14:36:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "zyYEGMTQwjcphECltCTdNA"], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.6ms)
+
+
